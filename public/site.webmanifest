@@ -1,0 +1,19 @@
+{
+  "name": "The Shoe Kicks — Luxury Bespoke Footwear Atelier",
+  "short_name": "The Shoe Kicks",
+  "description": "Handcrafted Goodyear welted luxury shoes, Chelsea boots, loafers and sovereign kicks from our flagship atelier in Camp, Pune, India.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#08080a",
+  "theme_color": "#08080a",
+  "categories": ["shopping", "lifestyle", "luxury"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

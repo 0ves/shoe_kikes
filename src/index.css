@@ -1,0 +1,435 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Syne', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-roman: 'Cinzel', serif;
+  }
+
+  body {
+    background-color: #08080a;
+    color: #e4e4e7;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Dark mode root styles (Preserved 100% as requested) */
+  html.dark body {
+    background-color: #08080a;
+    color: #e4e4e7;
+  }
+
+  /* Light mode root styles with high contrast & RED secondary accent */
+  html.light body {
+    background-color: #f7f7fa;
+    color: #111113;
+  }
+
+  html.light ::selection {
+    background-color: #dc2626;
+    color: #ffffff;
+  }
+
+  html.dark ::selection {
+    background-color: #d4af37;
+    color: #09090b;
+  }
+}
+
+/* Custom Typography Utilities */
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-roman {
+  font-family: 'Cinzel', serif;
+}
+
+/* Luxury visual effects - Responsive to Dark / Light Theme */
+html.dark .bg-gold-gradient {
+  background: linear-gradient(135deg, #fce0ad 0%, #dfba73 30%, #c5a059 70%, #9e7d3b 100%);
+  color: #000000;
+}
+
+/* In Light Mode: Secondary color RED */
+html.light .bg-gold-gradient {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);
+  color: #ffffff !important;
+}
+
+html.dark .text-gold-gradient {
+  background: linear-gradient(135deg, #fff2db 0%, #e2be79 40%, #c49a45 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.light .text-gold-gradient {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #991b1b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.dark .border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+html.light .border-gold-subtle {
+  border-color: rgba(220, 38, 38, 0.35);
+}
+
+html.dark .glass-panel {
+  background: rgba(18, 18, 22, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Crisp high-contrast light mode glass panel */
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+html.dark .glass-panel-gold {
+  background: rgba(20, 18, 15, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+html.light .glass-panel-gold {
+  background: rgba(254, 242, 242, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.06);
+}
+
+/* Light mode crisp separation & high-contrast surfaces */
+html.light .bg-\[\#08080a\],
+html.light .bg-\[\#070709\],
+html.light .bg-\[\#060608\] {
+  background-color: #f7f7fa !important;
+}
+
+/* Card surfaces become pure white with crisp subtle borders for instant separation */
+html.light .bg-\[\#0c0c10\],
+html.light .bg-\[\#0d0d11\],
+html.light .bg-\[\#09090c\],
+html.light .bg-\[\#111116\] {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.09) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+html.light .bg-\[\#0f0f13\],
+html.light .bg-\[\#121217\],
+html.light .bg-\[\#14141a\],
+html.light .bg-\[\#15151b\] {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.09) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+/* Light Mode High-Contrast Typography */
+html.light .text-white {
+  color: #09090b !important;
+}
+
+html.light .text-zinc-100 {
+  color: #111113 !important;
+}
+
+html.light .text-zinc-200 {
+  color: #18181b !important;
+}
+
+html.light .text-zinc-300 {
+  color: #27272a !important;
+}
+
+html.light .text-zinc-400 {
+  color: #4b4b52 !important; /* darkened for crystal clear readability */
+}
+
+html.light .text-zinc-500 {
+  color: #64646e !important;
+}
+
+html.light .text-\[\#e8caa4\],
+html.light .text-\[\#e6c989\] {
+  color: #dc2626 !important; /* Secondary Red in Light Mode */
+}
+
+html.light .text-\[\#d4af37\] {
+  color: #dc2626 !important;
+}
+
+html.light .border-white\/5,
+html.light .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.09) !important;
+}
+
+html.light .border-\[\#d4af37\]\/30,
+html.light .border-\[\#d4af37\]\/40,
+html.light .border-\[\#d4af37\]\/50 {
+  border-color: rgba(220, 38, 38, 0.35) !important;
+}
+
+html.light .bg-\[\#1b1915\],
+html.light .bg-\[\#1c1a14\] {
+  background-color: #fef2f2 !important;
+  border-color: rgba(220, 38, 38, 0.25) !important;
+}
+
+/* 3D perspective utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+/* Keyframe Animations for Floating Cards & Mobile Parallax */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1.5deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-1.5deg);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 7s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+/* Hero Section Typography Animations */
+@keyframes hero-letter-up {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) rotateX(-25deg);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+    filter: blur(0px);
+  }
+}
+
+@keyframes hero-tagline-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    letter-spacing: 0.35em;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 0.25em;
+  }
+}
+
+@keyframes text-shimmer-pan {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-hero-letter {
+  animation: hero-letter-up 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: transform, opacity;
+}
+
+.animate-hero-tagline {
+  animation: hero-tagline-fade 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-text-shimmer {
+  background-size: 200% auto;
+  animation: text-shimmer-pan 6s linear infinite;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Apple-Style Studio Gradient Mask & Hotspot Animations */
+.mask-radial-studio {
+  mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, #000 60%, transparent 100%);
+}
+
+/* Nike-Style Motion Graphics Commercial Ad Keyframes */
+@keyframes ad-shoe-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.75) translateY(60px) rotate(-18deg);
+    filter: blur(8px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-8px) rotate(-4deg);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0px) rotate(-6deg);
+    filter: blur(0px);
+  }
+}
+
+@keyframes ad-float-continuous {
+  0%, 100% {
+    transform: translateY(0px) rotate(-6deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-3deg);
+  }
+}
+
+@keyframes ad-speed-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(150%) skewX(-25deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ad-hud-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@keyframes ad-glow-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.65;
+  }
+}
+
+.animate-ad-shoe {
+  animation: ad-shoe-enter 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-ad-float {
+  animation: ad-float-continuous 5s ease-in-out infinite;
+}
+
+.animate-ad-speed {
+  animation: ad-speed-sweep 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-ad-blink {
+  animation: ad-hud-blink 1.8s ease-in-out infinite;
+}
+
+.animate-ad-glow {
+  animation: ad-glow-pulse 3.5s ease-in-out infinite;
+}
+
+@keyframes hotspot-ping {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.animate-hotspot-ping {
+  animation: hotspot-ping 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #09090c;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f1f1f5;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 3px;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}

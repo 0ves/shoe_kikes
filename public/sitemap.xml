@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- 1. Primary Storefront & Atelier Homepage (Camp, Pune) -->
+  <url>
+    <loc>https://theshoekicks.com/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://theshoekicks.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://theshoekicks.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theshoekicks.com/" />
+
+    <!-- Google Image Search Indexing for Shoe Masterpieces -->
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-oxford-noir.jpg</image:loc>
+      <image:title>The Imperial Obsidian Oxford — Handcrafted Goodyear Welted Shoe</image:title>
+      <image:caption>The Shoe Kicks flagship French boxcalf oxford with mirror-glazed cap-toe, hand-welted 360° sole. Handcrafted at our atelier in Camp, Pune, India.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-oxford-cognac.jpg</image:loc>
+      <image:title>The Tuscan Patina Oxford — Hand-Burnished Cap-Toe Shoe</image:title>
+      <image:caption>7-stage hand-dyed patina crust leather oxford with closed-channel oak-bark sole. Available at The Shoe Kicks atelier in Camp, Pune.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-chelsea-noir.jpg</image:loc>
+      <image:title>The Sovereign Chelsea Boot — Wholecut Seamless Leather Ankle Boot</image:title>
+      <image:caption>Unbroken single-piece French calfskin Chelsea boot with English woven elastic gore. The Shoe Kicks Camp Pune flagship.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-chelsea-suede.jpg</image:loc>
+      <image:title>The Tuscan Suede Chelsea Boot — Water-Repellent Reverse Suede</image:title>
+      <image:caption>Hydrophobic reverse suede boot with British Dainite studded rubber sole. The Shoe Kicks Pune.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-loafer-noir.jpg</image:loc>
+      <image:title>The Aurelius Horsebit Loafer — 18K Gold Plated Hardware</image:title>
+      <image:caption>Bespoke Belgian loafer with Italian sacchetto glove construction and 18K pale gold electroplated horsebit hardware.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-monkstrap-cognac.jpg</image:loc>
+      <image:title>The Vendôme Double Monk-Strap — Chiseled Brass Roller Buckles</image:title>
+      <image:caption>Handcrafted French boxcalf double monk shoe with oak-bark pit-tanned leather sole and cork memory bed.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-loafer-brown.jpg</image:loc>
+      <image:title>The Sovereign Venetian Loafer — Hand-Stitched Apron</image:title>
+      <image:caption>Venetian penny loafer in antiqued chestnut with hand-sewn apron stitch.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-sneaker-noir.jpg</image:loc>
+      <image:title>The Sovereign Vitello Kick — Luxury Italian Nappa Streetwear Sneaker</image:title>
+      <image:caption>Supple Vitello nappa leather kick with Margom 360° sidewall stitched rubber cupsole and memory arch bed.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/shoes/aesthetic-craft-atelier.jpg</image:loc>
+      <image:title>The Shoe Kicks Camp Pune Cobbler Lasting Atelier</image:title>
+      <image:caption>Master artisan shaping French boxcalf upper over wooden hornbeam shoe last in Kolsa Lane, Camp, Pune.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- 2. Masterpiece Footwear Catalog & Filter Grid -->
+  <url>
+    <loc>https://theshoekicks.com/collection</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- 3. Camp, Pune Flagship Atelier & VIP Salon Reservation -->
+  <url>
+    <loc>https://theshoekicks.com/boutique</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 4. Heritage, Leathers & Goodyear Craftsmanship -->
+  <url>
+    <loc>https://theshoekicks.com/craftsmanship</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 5. Brand Origin & Indian Anatomy Research Story -->
+  <url>
+    <loc>https://theshoekicks.com/story</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 6. Client Concierge & Camp Pune Contact -->
+  <url>
+    <loc>https://theshoekicks.com/contact</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 7. Individual Product Detail Pages (PDP) -->
+  <url>
+    <loc>https://theshoekicks.com/product/sk-oxford-01</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theshoekicks.com/product/sk-oxford-02</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theshoekicks.com/product/sk-chelsea-01</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theshoekicks.com/product/sk-chelsea-02</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theshoekicks.com/product/sk-loafer-01</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theshoekicks.com/product/sk-monk-01</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theshoekicks.com/product/sk-derby-01</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theshoekicks.com/product/sk-sneaker-01</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://theshoekicks.com/product/sk-cleaner-150</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/cleaner/cleaner-studio-hero.jpg</image:loc>
+      <image:title>The Shoe Kicks Foaming Shoe Cleaner 150ml — Studio Hero Packshot</image:title>
+      <image:caption>Official self-foaming deep footwear cleaner on dark obsidian marble. Handcrafted in Camp, Pune.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://theshoekicks.com/images/cleaner/cleaner-lifestyle-kit.jpg</image:loc>
+      <image:title>The Shoe Kicks Atelier Care Kit — Cleaner, Horsehair Brush and Microfiber Cloth</image:title>
+      <image:caption>Artisanal footwear care kit for French boxcalf, suede, and luxury sneakers on cobbler workbench.</image:caption>
+      <image:geo_location>Camp, Pune, India</image:geo_location>
+    </image:image>
+  </url>
+
+</urlset>

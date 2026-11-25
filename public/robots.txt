@@ -1,0 +1,43 @@
+# ==============================================================================
+# The Shoe Kicks — Technical SEO Robots Directive
+# Website: https://theshoekicks.com
+# Business: The Shoe Kicks Bespoke Footwear Atelier, Camp, Pune, Maharashtra, India
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /assets/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /checkout/success
+Disallow: /*?*checkout=*
+
+# Crawl-rate optimization for primary search bots
+User-agent: Googlebot
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /assets/
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://theshoekicks.com/sitemap.xml
+Host: theshoekicks.com
